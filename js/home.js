@@ -1,9 +1,9 @@
 
 headerElm.innerHTML = `
-    <h1 class="headline">Pokédex</h1>
+    <h1 class="home__headline">Pokédex</h1>
     <nav class="search-sort">
-        <input type="search" name="searchbar" id="searchbar" class="innershadow body3" placeholder="Search">
-        <button id="sort" class="innershadow">#</button>
+        <input type="search" name="searchbar" id="searchbar" placeholder="Search">
+        <button id="sort">#</button>
     </nav>
 `;
 
@@ -12,21 +12,21 @@ fetch("https://pokeapi.co/api/v2/pokemon/")
     .then(response => response.json())
     .then(data => {
         let pokeContainer = document.createElement("div");
-        pokeContainer.classList.add("pokemon__container", "innershadow");
+        pokeContainer.classList.add("pokemon__container");
 
         pokeContainer.innerHTML = data.results.map(pokemon => {
             let id = pokemon.url.slice(0, -1).split("/").pop();
-            let pokeName = pokemon.name;
+            let pokeNum = calcNums(id);
 
-            let pokeNum = idFormat(id);
+            let pokeName = pokemon.name;
 
 
             return `
-                <a href="details.html?name=${pokeName}" class="pokemon__wrapper dropshadow1">
+                <a href="details.html?name=${pokeName}" class="pokemon__wrapper">
                     <article class="pokemon">
-                        <h3 class="pokemon__number caption">#${pokeNum}</h3>
+                        <h3 class="pokemon__number">#${pokeNum}</h3>
                         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png" alt="" class="pokemon__img">
-                        <h2 class="pokemon__name body3">${pokeName}</h2>
+                        <h2 class="pokemon__name">${pokeName}</h2>
                     </article>
                 </a>
             `;

@@ -14,6 +14,8 @@ header {
     flex-direction: column;
     gap: 0.5rem;
 
+    background-color: var(--primary-color);
+
     padding: 0.75rem;
     padding-bottom: 1.5rem;
 }
@@ -28,12 +30,21 @@ nav {
 }
 
 
+.home__headline {
+    font: var(--headline);
+    color: var(--white-gray);
+}
+
+
 #searchbar {
     width: 100%;
     height: 100%;
 
     border: 0;
     border-radius: 16px;
+    box-shadow: var(--innershadow);
+
+    font: var(--body3);
 
     padding-left: 2.25rem;
     padding-right: 1rem;
@@ -44,7 +55,7 @@ nav {
 }
 
 #searchbar::placeholder {
-    color: var(--medium-color);
+    color: var(--medium-gray);
 }
 
 
@@ -55,7 +66,8 @@ nav {
 
     border: 0;
     border-radius: 100px;
-    background-color: var(--white-color);
+    background-color: var(--white-gray);
+    box-shadow: var(--innershadow);
 
     color: var(--primary-color);
     font-size: 1rem;
@@ -73,14 +85,16 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;
 
-    background-color: #fff;
+    background-color: var(--white-gray);
     border-radius: 8px;
+    box-shadow: var(--innershadow);
 
     padding: 1.5rem 0.75rem;
 }
 
 .pokemon__wrapper {
     border-radius: 8px;
+    box-shadow: var(--dropshadow1);
 
     text-decoration: none;
 }
@@ -97,7 +111,8 @@ nav {
 }
 
 .pokemon__number {
-    color: var(--medium-color);
+    color: var(--medium-gray);
+    font: var(--caption);
     text-align: right;
 
     padding-top: 0.25rem;
@@ -105,7 +120,8 @@ nav {
 }
 
 .pokemon__name {
-    color: var(--dark-color);
+    color: var(--dark-gray);
+    font: var(--body3);
     text-transform: capitalize;
     text-align: center;
 
