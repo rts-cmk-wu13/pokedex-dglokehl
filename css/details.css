@@ -23,6 +23,8 @@ nav {
 }
 
 .arrow__back {
+    text-shadow: var(--textshadow);
+
     cursor: pointer;
 
     padding: 0.375rem;
@@ -69,7 +71,7 @@ nav {
     transform: translateY(-50%);
 
     font-size: 0.75rem;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    text-shadow: var(--textshadow);
 
     cursor: pointer;
 }
@@ -129,11 +131,11 @@ section {
     padding: 0.125rem 0.5rem;
 }
 
-.pokemon__type__1 {
+.pokemon__type__primary {
     background-color: var(--primary-type);
 }
 
-.pokemon__type__2 {
+.pokemon__type__secondary {
     background-color: var(--secondary-type);
 }
 
