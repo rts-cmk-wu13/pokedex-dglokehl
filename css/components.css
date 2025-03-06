@@ -1,0 +1,185 @@
+
+:root {
+    background-color: #222;
+
+    /* --- TEXT --- */
+    --headline: 700 1.5rem/1.3333 'Poppins', sans-serif;
+    --subtitle1: 700 0.875rem/1.1429 'Poppins', sans-serif;
+    --subtitle2: 700 0.75rem/1.3333 'Poppins', sans-serif;
+    --subtitle3: 700 0.625rem/1.6000 'Poppins', sans-serif;
+    --body1: 400 0.875rem/1.1429 'Poppins', sans-serif;
+    --body2: 400 0.75rem/1.3333 'Poppins', sans-serif;
+    --body3: 400 0.625rem/1.6000 'Poppins', sans-serif;
+    --caption: 400 0.5rem/1.5000 'Poppins', sans-serif;
+
+
+    /* --- BOX-SHADOWS --- */
+    --dropshadow1: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+    --dropshadow2: 0 3px 12px 3px rgba(0, 0, 0, 0.2);
+    --innershadow: 0 1px 3px 1px rgba(0, 0, 0, 0.25) inset;
+    --textshadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+
+    /* --- COLORS --- */
+    --primary-color: #DC0A2D;
+
+    --dark-gray: #212121;
+    --medium-gray: #666666;
+    --light-gray: #E0E0E0;
+    --bg-gray: #EFEFEF;
+    --white-gray: #FFFFFF;
+
+
+    /* --- TYPES --- */
+    --bug: #A7B723;
+    --dark: #75574C;
+    --dragon: #7037FF;
+    --electric: #F9CF30;
+    --fairy: #E69EAC;
+    --fighting: #C12239;
+    --fire: #F57D31;
+    --flying: #A891EC;
+    --ghost: #70559B;
+    --normal: #AAA67F;
+    --grass: #74CB48;
+    --ground: #DEC16B;
+    --ice: #9AD6DF;
+    --poison: #A43E9E;
+    --psychic: #FB5584;
+    --rock: #B69E31;
+    --steel: #B7B9D0;
+    --water: #6493EB;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* --------- POKEMON TYPES --------- */
+
+/* .bug-bg {
+    background-color: var(--bug);
+}
+.bug-text {
+    color: var(--bug);
+}
+
+.dark-bg {
+    background-color: var(--dark);
+}
+.dark-text {
+    color: var(--dark);
+}
+
+.dragon-bg {
+    background-color: var(--dragon);
+}
+.dragon-text {
+    color: var(--dragon);
+}
+
+.electric-bg {
+    background-color: var(--electric);
+}
+.electric-text {
+    color: var(--electric);
+}
+
+.fairy-bg {
+    background-color: var(--fairy);
+}
+.fairy-text {
+    color: var(--fairy);
+}
+
+.fighting-bg {
+    background-color: var(--fighting);
+}
+.fighting-text {
+    color: var(--fighting);
+}
+
+.fire-bg {
+    background-color: var(--fire);
+}
+.fire-text {
+    color: var(--fire);
+}
+
+.flying-bg {
+    background-color: var(--flying);
+}
+.flying-text {
+    color: var(--flying);
+}
+
+.ghost-bg {
+    background-color: var(--ghost);
+}
+.ghost-text {
+    color: var(--ghost);
+}
+
+.normal-bg {
+    background-color: var(--normal);
+}
+.normal-text {
+    color: var(--normal);
+}
+
+.grass-bg {
+    background-color: var(--grass);
+}
+.grass-text {
+    color: var(--grass);
+}
+
+.ground-bg {
+    background-color: var(--ground);
+}
+.ground-text {
+    color: var(--ground);
+}
+
+.ice-bg {
+    background-color: var(--ice);
+}
+.ice-text {
+    color: var(--ice);
+}
+
+.poison-bg {
+    background-color: var(--poison);
+}
+.poison-text {
+    color: var(--poison);
+}
+
+.psychic-bg {
+    background-color: var(--psychic);
+}
+.psychic-text {
+    color: var(--psychic);
+}
+
+.rock-bg {
+    background-color: var(--rock);
+}
+.rock-text {
+    color: var(--rock);
+}
+
+.steel-bg {
+    background-color: var(--steel);
+}
+.steel-text {
+    color: var(--steel);
+}
+
+.water-bg {
+    background-color: var(--water);
+}
+.water-text {
+    color: var(--water);
+} */

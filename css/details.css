@@ -1,0 +1,297 @@
+
+#root {
+    background-color: var(--primary-type);
+}
+
+/* --- HEADER --- */
+
+header {
+    color: var(--white-gray);
+    position: relative;
+
+    padding-bottom: 9rem;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 1.25rem;
+    padding-bottom: 1.5rem;
+}
+
+.arrow__back {
+    text-shadow: var(--textshadow);
+
+    cursor: pointer;
+
+    padding: 0.375rem;
+}
+
+
+.pokemon__name {
+    width: 100%;
+    font: var(--headline);
+    text-transform: capitalize;
+}
+
+.pokemon__number {
+    font: var(--subtitle2);
+}
+
+
+.header__bg {
+    width: auto;
+    height: 95%;
+
+    position: absolute;
+    top: 0.25rem;
+    right: 0.375rem;
+    z-index: 1;
+
+    filter: brightness(100);
+    opacity: 0.1;
+}
+
+
+.pokemon__gallery__wrapper {
+    position: absolute;
+    z-index: 9;
+}
+
+.pokemon__gallery {
+    position: relative;
+}
+
+.pokemon__gallery__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 0.75rem;
+    text-shadow: var(--textshadow);
+
+    cursor: pointer;
+}
+
+.arrow__left {
+    left: 1.5rem;
+}
+
+.arrow__right {
+    right: 1.5rem;
+}
+
+.pokemon__gallery__img {
+    padding: 0 4.75rem;
+}
+
+
+
+/* --- MAIN --- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    border-radius: 8px;
+    background-color: var(--white-gray);
+    box-shadow: var(--innershadow);
+
+    padding: 1.25rem;
+    padding-top: 3.5rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+/* --- TYPES --- */
+
+.pokemon__type__container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pokemon__type {
+    border-radius: 10px;
+
+    color: var(--white-gray);
+    font: var(--subtitle3);
+    text-transform: capitalize;
+
+    padding: 0.125rem 0.5rem;
+}
+
+.pokemon__type__primary {
+    background-color: var(--primary-type);
+}
+
+.pokemon__type__secondary {
+    background-color: var(--secondary-type);
+}
+
+
+
+/* --- ABOUT --- */
+
+.about__headline {
+    color: var(--primary-type);
+    font: var(--subtitle1);
+    text-align: center;
+}
+
+
+.info__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+
+    border-left: solid 1px var(--light-gray);
+}
+.info:first-of-type {
+    border-left: none;
+}
+
+
+.info__text__wrapper {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font: var(--body3);
+}
+
+.info__text__wrapper--abilities {
+    width: auto;
+    align-items: flex-start;
+    text-transform: capitalize;
+}
+
+.info__text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hiddenability {
+    color: var(--medium-gray);
+}
+
+
+.info__title {
+    color: var(--medium-gray);
+    font: var(--caption);
+}
+
+
+.about__desc {
+    font: var(--body3);
+    text-align: justify;
+
+    padding: 1rem 0;
+}
+
+
+
+/* --- STATS --- */
+
+.stats__headline {
+    color: var(--primary-type);
+    font: var(--subtitle1);
+    text-align: center;
+}
+
+
+.basestats {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    column-gap: 0.5rem;
+
+    text-align: right;
+}
+
+tbody, tr {
+    display: contents;
+}
+
+.basestats__title {
+    border-right: solid 1px var(--light-gray);
+
+    color: var(--primary-type);
+    font: var(--subtitle3);
+
+    padding-right: 0.75rem;
+}
+
+.basestats__value {
+    font: var(--body3);
+
+    padding-left: 0.25rem;
+}
+
+.basestats__chart {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.basestats__chart__bar {
+    width: 100%;
+    height: 100%;
+    height: 4px;
+
+    border-radius: 4px;
+    background-color: var(--primary-type);
+}
+
+.basestats__chart__value {
+    height: 100%;
+
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: var(--primary-type);
+}
+
+.basestats__bar {
+    height: 4px;
+
+    border: 0;
+    border-radius: 4px;
+    /* color: var(--primary-type); */
+    /* background: var(--primary-type); */
+}
+
+  
+.basestats__bar, .basestats__bar::-webkit-meter-bar {
+  background: var(--primary-type-bg);
+}
+
+/* The green (optimum) bar in Firefox */
+.basestats__bar:-moz-meter-optimum::-moz-meter-bar,
+.basestats__bar::-webkit-meter-optimum-value,
+.basestats__bar:-moz-meter-sub-optimum::-moz-meter-bar,
+.basestats__bar::-webkit-meter-suboptimum-value,
+.basestats__bar:-moz-meter-sub-sub-optimum::-moz-meter-bar,
+.basestats__bar::-webkit-meter-even-less-good-value {
+  background: var(--primary-type);
+}
